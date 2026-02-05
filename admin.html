@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel - Sahul Hameed</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/loading.css">
@@ -17,20 +20,21 @@
     <script src="services/supabase-service.js"></script>
     <script src="js/notifications.js"></script>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Admin Panel</a>
-            
+
             <div class="nav-menu">
-                <a href="index.html" class="nav-link">View Website</a>
+                <a href="index.html" class="nav-link">View Website now</a>
                 <button class="theme-toggle" id="themeToggle">
                     <span class="theme-icon">🌙</span>
                 </button>
                 <button class="btn btn-secondary" id="logoutBtn" style="margin-left: 1rem;">Logout</button>
             </div>
-            
+
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -75,12 +79,13 @@
             <!-- About Tab -->
             <div class="tab-content" id="aboutTab">
                 <h2>Manage About Page Content</h2>
-                
+
                 <div class="admin-card">
                     <h3>Profile Photo</h3>
                     <div class="photo-upload-section">
                         <div class="photo-preview" id="photoPreview" style="display: none;">
-                            <img id="photoPreviewImg" src="" alt="Profile Photo Preview" style="max-width: 200px; max-height: 200px; border-radius: 8px; margin-bottom: 1rem;">
+                            <img id="photoPreviewImg" src="" alt="Profile Photo Preview"
+                                style="max-width: 200px; max-height: 200px; border-radius: 8px; margin-bottom: 1rem;">
                         </div>
                         <div class="form-group">
                             <label for="photoUpload">Upload Profile Photo</label>
@@ -91,13 +96,16 @@
                         </div>
                         <div class="form-group" style="display: flex; gap: 1rem; align-items: center;">
                             <button type="button" class="btn btn-primary" id="uploadPhotoBtn">Upload Photo</button>
-                            <button type="button" class="btn btn-secondary" id="removePhotoBtn" style="display: none;">Remove Photo</button>
+                            <button type="button" class="btn btn-secondary" id="removePhotoBtn"
+                                style="display: none;">Remove Photo</button>
                             <span id="photoStatus" style="color: var(--text-secondary);"></span>
                         </div>
                         <div class="form-group">
                             <label for="photoUrl">Or enter photo URL</label>
-                            <input type="url" id="photoUrl" class="form-control" placeholder="https://example.com/photo.jpg">
-                            <button type="button" class="btn btn-secondary" id="savePhotoUrlBtn" style="margin-top: 0.5rem;">Save URL</button>
+                            <input type="url" id="photoUrl" class="form-control"
+                                placeholder="https://example.com/photo.jpg">
+                            <button type="button" class="btn btn-secondary" id="savePhotoUrlBtn"
+                                style="margin-top: 0.5rem;">Save URL</button>
                         </div>
                     </div>
                 </div>
@@ -120,20 +128,22 @@
                 <div class="admin-card">
                     <h3>Education</h3>
                     <div id="educationEditor"></div>
-                    <button class="btn btn-secondary" id="addEducationBtn" style="margin-top: 1rem;">Add Education</button>
+                    <button class="btn btn-secondary" id="addEducationBtn" style="margin-top: 1rem;">Add
+                        Education</button>
                 </div>
 
                 <div class="admin-card">
                     <h3>Skills</h3>
                     <div id="skillsEditor"></div>
-                    <button class="btn btn-secondary" id="addSkillCategoryBtn" style="margin-top: 1rem;">Add Skill Category</button>
+                    <button class="btn btn-secondary" id="addSkillCategoryBtn" style="margin-top: 1rem;">Add Skill
+                        Category</button>
                 </div>
             </div>
 
             <!-- Settings Tab -->
             <div class="tab-content" id="settingsTab">
                 <h2>Admin Settings</h2>
-                
+
                 <div class="admin-card">
                     <h3>Change Admin Password</h3>
                     <div class="form-group">
@@ -228,5 +238,5 @@
     <script src="js/script.js"></script>
     <script src="js/admin.js"></script>
 </body>
-</html>
 
+</html>
